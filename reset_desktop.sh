@@ -1,3 +1,4 @@
 #!/bin/bash
-./reset_bus.sh unity
-gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize "4"
+. ./attach_dbus.sh unity
+gsettings reset org.gnome.desktop.interface gtk-theme
+gsettings reset org.gnome.desktop.interface icon-theme
